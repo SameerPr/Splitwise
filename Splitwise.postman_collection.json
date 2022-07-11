@@ -198,7 +198,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/users/balances",
+					"raw": "http://localhost:8080/users/balance",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -206,7 +206,7 @@
 					"port": "8080",
 					"path": [
 						"users",
-						"balances"
+						"balance"
 					]
 				}
 			},
@@ -227,6 +227,27 @@
 					"path": [
 						"expense",
 						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show user balance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users/balance/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"balance",
+						"1"
 					]
 				}
 			},
