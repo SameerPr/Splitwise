@@ -94,7 +94,7 @@ func (u userController) GetAllBalance(c *gin.Context) {
 		if balance.Amount >= 0 {
 			response = append(response, fmt.Sprintf("%s gets back %f in total", balance.Name, balance.Amount))
 		} else {
-			response = append(response, fmt.Sprintf("%s owes %f in total", balance.Name, balance.Amount))
+			response = append(response, fmt.Sprintf("%s owes %f in total", balance.Name, -1*balance.Amount))
 		}
 	}
 	c.JSON(http.StatusOK, response)
